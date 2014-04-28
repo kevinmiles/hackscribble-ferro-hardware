@@ -1,0 +1,119 @@
+---
+layout: hackscribble-main
+title: Hackscribble | Hardware for Arduino FRAM
+---
+
+	<section id="content" class="">
+
+        <div class="row" class = "">
+		    <div class="large-12 columns my-column">	
+			    <h2 class="my-headline">Hardware for Arduino FRAM.</h2>
+                <p>
+                    Ideas on how to add fast, versatile, non-volatile ferroelectric memory (FRAM) to your Arduino
+                    using the Hackscribble Ferro library.
+                </p>
+                <p><p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="large-12 columns">
+                <hr class="my-hr"></hr>
+            </div>
+        </div>
+ 
+		<div class="row" class = "">
+
+	        <div class="large-8 columns my-column">	
+                <h2 class="my-headline">Getting started.</h2>
+                <p>
+                    When we wrote the <a href="http://www.hackscribble.com/hackscribble-ferro-library"><b>Hackscribble Ferro library</b></a>
+                    to add FRAM to our Arduino projects, we needed hardware to test it with.  Our first version used a breadboard,
+                    an SOIC-8 breakout from <a href="http://www.qrpme.com" target="_blank">QPRme</a> for the MB85RS 
+                    FRAM chip and an <a href="http://www.adafruit.com/products/757" target="_blank"> Adafruit bidirectional level converter</a>.
+                </p> 
+                <p>
+                    The hardware worked first time, but the software took a few attempts. However, with
+                    everything proved on the bench, we decided to move on to a more permanent test rig.
+                    We swapped the breadboard for an Arduino prototyping shield from 
+                    <a href="http://www.dfrobot.com" target="_blank">DFRobot</a>, plugged the level
+                    converter into header sockets (so we could borrow it for other projects) and hardwired
+                    the FRAM breakout.
+                </p>
+                <img class="my-image" src="img/FRAM_proto_board_wide.jpg" />
+                <hr class="my-hr"></hr>
+                <h2 class="my-headline">Smaller is better.</h2>
+		        <p>
+                    We have been experimenting with FRAM because we want to add storage to a test equipment project that's
+                    in development.  The FRAM will be built into the PCB for that project rather than being
+                    added as an Arduino shield. So we started some design work on fragments of circuit boards to see 
+                    how small we could make the combination of FRAM and level converter.  
+                </p>
+                <p>
+                    The first design is based on the Adafruit level converter, which in turn is taken from an 
+                    <a href="http://www.adafruit.com/datasheets/AN10441.pdf" target="_blank">
+                    NXP application note</a>.  The circuit uses BSS138 MOS-FETs and some resistors.  One FRAM chip and
+                    the level converter components use about 25mm by 10mm of PCB space.  With pin headers added to 
+                    turn it into a breakout board, it is still only 25mm by 18mm, plus space for labelling.
+                </p>
+                <img class="my-image" src="img/pcb_discrete.jpg" />
+                <p>
+                    We thought we could do better than this, however.  The level converter is bidirectional and I2C compatible.
+                    We don't need I2C for this application, and can make do with a simpler circuit based on the TXB0104 chip.
+                </p>
+                <p>
+                    This circuit takes up only 20mm by 10mm.  Pin headers take it up to 20mm by 20mm, plus space for labelling.
+                </p>
+                <img class="my-image" src="img/pcb_integrated.jpg" />
+                <p>
+                    We have not yet built and tested either fragment in hardware, but both circuits
+                    check out OK on paper.  We will include the TXB0104 in the next version of our test equipment PCB and
+                    will report back on that.
+                </p>
+                <hr class="my-hr"></hr>
+                <h2 class="my-headline">What about a shield?</h2>
+                <p>
+                    While we don't have an immediate need for an Arduino FRAM shield, maybe it would be useful for some people.
+                    If we decide to design one, there are some questions we need to answer.  What do you think?
+                    <ul>
+                        <li>There would be plenty of space on a full-size shield for many FRAM chips.  How many should we 
+                        include in the PCB design?</li>
+                        <li>Would it be helpful to include other types of SPI-connected storage on the same shield, 
+                        like an SD card or extra EEPROM?</li>
+                        <li>If we include multiple chips, how much flexibility should we give the user to specify which
+                        Arduino pins act as chip select for each device?  Physically, how would this work? Solder links? 
+                        Shorting links on pin headers? DIL switches?</li>
+                    </ul>
+                </p>
+            </div>
+			
+			<div class="large-4 columns my-column">
+                <hr class="my-hr show-for-small"></hr>
+                <p>
+                    <b>
+                        <a href="{{ site.github.repository_url }}/archive/master.zip">
+                            Download the Eagle CAD schematics and board layouts.
+                        </a>
+                    </b>
+                </p>
+                <img class="my-image" src="img/breakout_schematics.jpg" />
+                <p>
+                    <b>
+                        <a href="{{ site.github.repository_url }}"><i class="icon-github"></i>&nbsp;&nbsp;Go to GitHub repository.</a>
+                    </b>
+                </p>
+                <div class="panel">
+                    <dl>
+                        <dt>Want the software?</dt>
+                        <dd>
+                            <a href="http://www.hackscribble.com/hackscribble-ferro-library">Get the Hackscribble Ferro library for Arduino.</a>
+                        </dd>
+                    </dl>
+                </div>
+			</div>
+			
+        </div>
+
+    </section>
+
+
