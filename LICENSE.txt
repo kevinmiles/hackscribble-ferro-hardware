@@ -1,6 +1,0 @@
-﻿Copyright © 2014 Ray Benitez
-============================
-
-This hardware design by Ray Benitez is licensed under the 
-Creative Commons Attribution-Sharealike 4.0 International License,
-details of which can be found at http://creativecommons.org/licenses/by-sa/4.0/.
