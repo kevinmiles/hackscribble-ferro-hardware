@@ -72,18 +72,23 @@ title: Hackscribble | Hardware for Arduino and LPCXpresso FRAM
                 <hr class="my-hr"></hr>
                 <h2 class="my-headline">What about a shield?</h2>
                 <p>
-                    While we don't have an immediate need for an Arduino FRAM shield, maybe it would be useful for some people.
-                    If we decide to design one, there are some questions we need to answer.  What do you think?
+                    When we decided to build a FRAM mini-shield, we had three goals:
                     <ul>
-                        <li>There would be plenty of space on a full-size shield for many FRAM chips.  How many should we 
-                        include in the PCB design?</li>
-                        <li>Would it be helpful to include other types of SPI-connected storage on the same shield, 
-                        like an SD card or extra EEPROM?</li>
-                        <li>If we include multiple chips, how much flexibility should we give the user to specify which
-                        Arduino pins act as chip select for each device?  Physically, how would this work? Solder links? 
-                        Shorting links on pin headers? DIL switches?</li>
+                        <li>Make it easy to add FRAM to future projects.</li>
+                        <li>Be compatible with both 5V Arduino boards and 3.3V LPCXpresso boards.</li>
+                        <li>Include SPI test points to make it easy to hook up a data analyser for software debugging.</li>
                     </ul>
                 </p>
+				<p>
+					Our first design has space for up to three 3.3V FRAM ICs and a TXB0108 level converter for compatibility with 
+					the Arduino's 5V logic levels. The three FRAMs use digital pins 8, 9 and 10 as chip select. After wrestling with 
+					a faulty FRAM for a while, the hardware worked first time on both the LPCXpresso and Arduino boards.
+				</p>
+				<img class="my-image" src="img/mini-shield-prototype.jpg" />
+                <p>
+					We have already spotted some improvements that we will publish in a Revision B board soon. Then we will produce a 
+					version without the SPI test pins, since many people will not want these and the PCB can be made smaller without them.
+				</p>
             </div>
 			
 			<div class="large-4 columns my-column">
