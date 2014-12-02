@@ -1,10 +1,10 @@
 Hackscribble FRAM Hardware
 ==========================
 
-#### *PCB designs for connecting Fujitsu MB85RS Ferroelectric memory (FRAM) to Arduino.*
+#### *PCB designs for connecting Fujitsu MB85RS Ferroelectric memory (FRAM) to Arduino and LPCXpresso boards.*
 
 Created on 20 April 2014 by Ray Benitez  
-Last modified on 5 November 2014 by Ray Benitez		
+Last modified on 1 December 2014 by Ray Benitez		
   
 These hardware designs are licensed by Ray Benitez under the Creative Commons Attribution-Sharealike 4.0 International License.
 	
@@ -25,8 +25,6 @@ Two design approaches are shown:
 
 The designs are in Eagle format.
 
-Note: These circuits have not yet been verified in hardware.
-
 #### Mini-shield
 
 The mini-shield allows up to three 3.3V FRAMS to be connected to an Arduino (or an LPCXPresso board).  It uses an extended version of the integrated circuit snippet (above) using a TXB0108. The board has been tested with Arduino Uno and LPCXpresso 11U68 boards.
@@ -42,6 +40,10 @@ The REVISION B board also includes test points for monitoring the SPI bus.
 
 
 ### Change history
+
+#### 1 December 2014
+
+Added mini-shield REVISION C "slim" version.
 
 #### 5 November 2014
 

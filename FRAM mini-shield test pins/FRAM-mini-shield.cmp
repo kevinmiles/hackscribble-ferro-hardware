@@ -1,0 +1,150 @@
+Cmp-Mod V01 Created by Cvpcb (2014-11-02 BZR 5250)-product   date = 05/11/2014 09:24:49
+
+BeginCmp
+TimeStamp = /542B30E8;
+Reference = C1;
+ValeurCmp = 100nF;
+IdModule  = SMD_Packages:SMD-0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /542B33EF;
+Reference = C2;
+ValeurCmp = 100nF;
+IdModule  = SMD_Packages:SMD-0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /542B3BCE;
+Reference = C3;
+ValeurCmp = 100nF;
+IdModule  = SMD_Packages:SMD-0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /542BE343;
+Reference = C4;
+ValeurCmp = 10uF;
+IdModule  = SMD_Packages:SMD-0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /542BE3A7;
+Reference = C5;
+ValeurCmp = 10uF;
+IdModule  = SMD_Packages:SMD-0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /542BE6B9;
+Reference = C6;
+ValeurCmp = 10uF;
+IdModule  = SMD_Packages:SMD-0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /542C1F15;
+Reference = C7;
+ValeurCmp = 100nF;
+IdModule  = SMD_Packages:SMD-0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /542C1D32;
+Reference = C8;
+ValeurCmp = 100nF;
+IdModule  = SMD_Packages:SMD-0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /5459EC53;
+Reference = HDR1;
+ValeurCmp = AB2_HDR08-1;
+IdModule  = ab2_header:AB2_HDR_M08-1V;
+EndCmp
+
+BeginCmp
+TimeStamp = /542C11AE;
+Reference = HDR2;
+ValeurCmp = AB2_HDR06-1;
+IdModule  = ab2_header:AB2_HDR_M06-1V;
+EndCmp
+
+BeginCmp
+TimeStamp = /542C68DC;
+Reference = HDR3;
+ValeurCmp = GND;
+IdModule  = ab2_header:AB2_HDR_M01-1V;
+EndCmp
+
+BeginCmp
+TimeStamp = /542C6846;
+Reference = HDR4;
+ValeurCmp = D13-SCK;
+IdModule  = Hackscribble:test-pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /542C6807;
+Reference = HDR5;
+ValeurCmp = D12-MISO;
+IdModule  = Hackscribble:test-pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /542C67C7;
+Reference = HDR6;
+ValeurCmp = D11-MOSI;
+IdModule  = Hackscribble:test-pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /542C678C;
+Reference = HDR7;
+ValeurCmp = D10-CSU3;
+IdModule  = Hackscribble:test-pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /542C61D5;
+Reference = HDR8;
+ValeurCmp = D9-CSU2;
+IdModule  = Hackscribble:test-pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /542C606C;
+Reference = HDR9;
+ValeurCmp = D8-CSU1;
+IdModule  = Hackscribble:test-pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /542B6528;
+Reference = U1;
+ValeurCmp = MB85RS1MT;
+IdModule  = SMD_Packages:SOIC-8-W;
+EndCmp
+
+BeginCmp
+TimeStamp = /542B66ED;
+Reference = U2;
+ValeurCmp = MB85RS1MT;
+IdModule  = SMD_Packages:SOIC-8-W;
+EndCmp
+
+BeginCmp
+TimeStamp = /542B680A;
+Reference = U3;
+ValeurCmp = MB85RS1MT;
+IdModule  = SMD_Packages:SOIC-8-W;
+EndCmp
+
+BeginCmp
+TimeStamp = /542C00D4;
+Reference = U4;
+ValeurCmp = TXB0108;
+IdModule  = SMD_Packages:SSOP-20;
+EndCmp
+
+EndListe

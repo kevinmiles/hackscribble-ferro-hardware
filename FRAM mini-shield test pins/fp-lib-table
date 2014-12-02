@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name ab2_header)(type KiCad)(uri "C:\\Users\\Ray\\Dropbox\\ccc KiCad\\modules\\ab2_header.pretty")(options "")(descr ""))
+  (lib (name Hackscribble_Logo)(type KiCad)(uri "C:\\Users\\Ray\\Dropbox\\ccc KiCad\\modules\\hackscribble-logo-small.pretty")(options "")(descr ""))
+)
